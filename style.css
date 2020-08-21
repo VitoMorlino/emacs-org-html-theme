@@ -1,0 +1,126 @@
+
+/*
+* CSS Combinator Quick Ref:
+* - Descendant (space)
+* - Child (>)
+* - Adjacent Sibling (+) (immediately following)
+* - General Sibling (~)
+*/
+
+
+:root {
+    --theme-color: rgb(75,25,125);
+    --theme-color-dark: rgb(50,0,75);
+    --theme-color-light: rgb(100,50,150);
+    --theme-color-lighter1: rgb(125,75,175);
+    --theme-color-lighter2: rgb(150,100,200);
+    --theme-color-lighter3: rgb(175,125,225);
+    --theme-color-lightest: rgb(200,150,250);
+
+    --toc-width: 300px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: unset;
+    background-color: var(--theme-color);
+}
+
+#content {
+    background-color: white;
+    margin-left: var(--toc-width);
+    max-width: 800px;
+    padding: 1.5em 3.0em;
+}
+
+
+
+
+/* ********************************************* */
+/* ************* TABLE OF CONTENTS ************* */
+/* ********************************************* */
+
+#table-of-contents {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--toc-width);
+    height: 100%;
+    overflow-y: scroll;
+    background-color: black;
+    color: white;
+    z-index: 200;
+    /* -ms-overflow-style: none; */
+    /* scrollbar-width: none; */
+}
+#table-of-contents h2 { /* "Table of Contents" header label */
+    z-index: 200;
+    background-color: var(--theme-color);
+    text-align: center;
+    padding: 0.809em;
+    display: block;
+    color: #fcfcfc;
+    font-size: 100%;
+    margin-bottom: 0.809em;
+    margin-top: unset;
+}
+#table-of-contents .toc {
+    padding-inline-start: unset;
+}
+#table-of-contents a {
+    color: white;
+    padding: 0.5em 1.5em;
+    display: block;
+    text-decoration: none;
+}
+
+#table-of-contents .toc-elem-visible {
+    display: block;
+}
+#table-of-contents .toc-elem-hidden {
+    display: none;
+}
+
+#table-of-contents .toc-depth-1 {
+    background-color: #333;
+}
+#table-of-contents .toc-depth-2 {
+    background-color: #444;
+}
+
+#table-of-contents .active {
+    background-color: var(--theme-color);
+    color: var(--theme-color-lightest);
+}
+#table-of-contents #toc-active-current {
+    color: white;
+    border: 1px solid white;
+    border-right: none;
+    border-left: none;
+}
+
+/* ********************************************* */
+/* *********** END TABLE OF CONTENTS *********** */
+/* ********************************************* */
+
+
+
+
+#postamble {
+    color: white;
+    background: #444;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    z-index: 400;
+    padding: 1em;
+}
+#postamble a {
+    color: var(--theme-color-lightest);
+}
