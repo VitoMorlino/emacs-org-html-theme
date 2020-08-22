@@ -1,0 +1,18 @@
+# -*- mode: org; -*-
+
+#
+# ------- JQUERY ------- #
+#
+#+HTML_HEAD: <script type="text/javascript" src="https://vitomorlino.github.io/emacs-org-html-theme/jquery3.5.1/jquery-3.5.1.js"></script>
+
+#
+# ------ BOOTSTRAP ----- #
+#
+#+HTML_HEAD: <script type="text/javascript" src="https://vitomorlino.github.io/emacs-org-html-theme/bootstrap4.5.0/util.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://vitomorlino.github.io/emacs-org-html-theme/bootstrap4.5.0/scrollspy.js"></script>
+
+#
+# ----- THEME FILES ---- #
+#
+#+HTML_HEAD: <script type="text/javascript" src="https://vitomorlino.github.io/emacs-org-html-theme/script.js"></script>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://vitomorlino.github.io/emacs-org-html-theme/style.css"/>
